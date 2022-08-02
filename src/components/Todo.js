@@ -3,7 +3,7 @@ import Modal from '../components/Modal.js';
 import Backdrop from '../components/Backdrop.js';
 import '../index.css';
 
-function Todo(props) {
+function Todo() {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -16,7 +16,7 @@ function Todo(props) {
     return (
         <div className='todos-main'>
             <div className='todos-card'>
-                <h3>{props.text}</h3>
+                <h3>Learn JavaScripts Fundamentals.</h3>
                 <div className='todos-btn'>
                     <button onClick={deleteHandler} >Delete</button>
                 </div>
